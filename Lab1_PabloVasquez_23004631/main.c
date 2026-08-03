@@ -29,7 +29,8 @@ uint8_t stringLength(uint8_t *str)
 
 }
 
-int main() {
+int main() 
+{
    
    uint32_t num = 0;
 
