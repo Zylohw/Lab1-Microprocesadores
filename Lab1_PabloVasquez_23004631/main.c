@@ -1,39 +1,14 @@
 #include "RTE_Components.h"
 #include CMSIS_device_header
 #include <stdio.h>
+#include "utilities.h"
+#include "utilities.c"
 
-void bitSet(uint32_t*ptr,uint8_t bit)
-{
-    *ptr |= 1<<bit;
-}
 
-void bitClear(uint32_t *ptr, uint8_t bit)
-{
-    *ptr &= ~(1<<bit);    
-}
-
-void bitToggle(uint32_t *ptr,uint8_t bit)
-{
-    *ptr ^= 1<<bit;
-}
-
-uint8_t stringLength(uint8_t *str)
-{
-    uint8_t contador = 0 ;
-    while(*str != '\0')
-    {
-        contador++;
-        str = str + 1; 
-    }
-    return contador;
-
-}
 
 int main() 
 {
-   
-   uint32_t num = 0;
-
+    uint32_t num = 0;
     printf("bitSet\r\n");
     num = 0;
     printf("Antes:  0x%08X\r\n", num);

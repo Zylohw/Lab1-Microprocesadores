@@ -6,6 +6,7 @@ project:
       files:
         - file: ./main.c
         - file: utilities.h
+        - file: utilities.c
 
   # List components to use for your application.
   # A software component is a re-usable unit that may be configurable.
